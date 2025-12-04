@@ -12,7 +12,6 @@ import (
 
 func main() {
 	pretty.Day("Two")
-	defer pretty.Footer()
 
 	inp := input.Input()
 	rngs := createRanges(inp.String())

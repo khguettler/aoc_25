@@ -8,7 +8,6 @@ import (
 
 func main() {
 	pretty.Day("One")
-	defer pretty.Footer()
 
 	inp := input.Input()
 
