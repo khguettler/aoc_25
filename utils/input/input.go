@@ -42,3 +42,14 @@ func (inp *input) Lines() []string {
 
 	return lines
 }
+
+func (inp *input) Grid() [][]string {
+	lines := inp.Lines()
+	grid := make([][]string, len(lines))
+
+	for y, row := range lines {
+		grid[y] = strings.Split(row, "")
+	}
+
+	return grid
+}
